@@ -13,7 +13,7 @@ import base64
 import librosa
 from whisper_timestamped.transcribe import get_audio_tensor, get_vad_segments
 
-model_size = "./faster_large"
+model_size = "large"
 # Run on GPU with FP16
 model = None
 def split_audio_whisper(audio_path, audio_name, target_dir='processed'):
